@@ -12,16 +12,16 @@ The Kubernetes API server is the gateway to your cluster, so securing it is cruc
 
 - Enable **mTLS** for communication between API server and components.
 
-✅ **Disable Insecure Ports:**
-
-- Avoid `-insecure-port=0` (insecure API access).
-- Only use `-secure-port=6443`.
-  
 ✅ **Restrict Access:**
 
 - Use **RBAC** to control permissions.
 - Limit API access to specific CIDR ranges using `-anonymous-auth=false` and `-authorization-mode=RBAC`.
 - Use an **OIDC provider** for authentication.
+  
+✅ **Disable Insecure Ports:**
+
+- Avoid `-insecure-port=0` (insecure API access).
+- Only use `-secure-port=6443`.
 
 ✅ **Enable Audit Logging:**
 
