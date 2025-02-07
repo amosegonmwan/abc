@@ -8,6 +8,15 @@
 
 The Kubernetes API server is the gateway to your cluster, so securing it is crucial.
 
+✅ **Use Mutual TLS (mTLS):**
+
+- Enable **mTLS** for communication between API server and components.
+
+✅ **Disable Insecure Ports:**
+
+- Avoid `-insecure-port=0` (insecure API access).
+- Only use `-secure-port=6443`.
+  
 ✅ **Restrict Access:**
 
 - Use **RBAC** to control permissions.
@@ -24,16 +33,7 @@ The Kubernetes API server is the gateway to your cluster, so securing it is cruc
     rules:
       - level: RequestResponse
     ```
-    
-
-✅ **Use Mutual TLS (mTLS):**
-
-- Enable **mTLS** for communication between API server and components.
-
-✅ **Disable Insecure Ports:**
-
-- Avoid `-insecure-port=0` (insecure API access).
-- Only use `-secure-port=6443`.
+  
 
 ---
 
