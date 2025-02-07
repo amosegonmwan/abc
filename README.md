@@ -1,6 +1,6 @@
 # **Secure Kubernetes Like A PRO**
 
-## Here’s how you can **secure your Kubernetes cluster like a pro** by implementing best practices for each area:
+## Here’s how you can **secure your Kubernetes cluster like a pro** by implementing best practices:
 
 ---
 
